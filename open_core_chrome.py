@@ -2,20 +2,12 @@ from selenium.webdriver.common.by import By
 
 from add_institution_shifts import add_institution_shifts
 from clear_field import clear_field
-
-usr = "admin"
-pwd = "demo"
-core_url = "https://demo.openemis.org/core"
-port = 9292
-institution_code = "S2009"
-first_shift = "First Shift"
-second_shift = "Second Shift"
 from selenium import webdriver
 from selenium.common import TimeoutException, WebDriverException
 
 from login_core import login_core
 from open_chrome import open_chrome
-
+from config import *
 # # opt = webdriver.Chrome.create_options();
 opt = webdriver.ChromeOptions();
 # opt.add_argument("--remote-debugging-port=9292")

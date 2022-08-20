@@ -1,2 +1,9 @@
 /venv/
+/.idea/
 /__pychache__/
+.idea/.gitignore
+.idea/emis_selenium.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
