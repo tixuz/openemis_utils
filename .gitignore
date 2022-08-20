@@ -1,8 +1,8 @@
 /venv/
 /.idea/
-/__pychache__/
-git rm -r --cached __pycache__/
-__pychache__/*
+/__pycache__/
+__pycache__/
+__pycache__/*
 .idea/.gitignore
 .idea/emis_selenium.iml
 .idea/inspectionProfiles/
