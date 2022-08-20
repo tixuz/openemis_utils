@@ -8,14 +8,13 @@ from selenium.common import TimeoutException, WebDriverException
 from login_core import login_core
 from open_chrome import open_chrome
 from config import *
-# # opt = webdriver.Chrome.create_options();
+
 opt = webdriver.ChromeOptions();
-# opt.add_argument("--remote-debugging-port=9292")
 opt.add_experimental_option("debuggerAddress", "localhost:{}".format(str(port)))
 driver = None
 
 try:
-    driver = webdriver.Chrome(executable_path=".//chromedriver",
+    driver = webdriver.Chrome(executable_path=path_to_chrome_driver,
                               options=opt)
 except TimeoutException:
     print("Selenium Timeout")

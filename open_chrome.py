@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.common import TimeoutException, WebDriverException
+from config import path_to_chrome_driver
 
 
 def open_chrome(port, core_url):
@@ -8,7 +9,7 @@ def open_chrome(port, core_url):
     argument = "--remote-debugging-port={}".format(str(port))
     opt.add_argument(argument)
     try:
-        driver = webdriver.Chrome(".//chromedriver",
+        driver = webdriver.Chrome(path_to_chrome_driver,
                                   options=opt)
         driver.get(core_url)
         return driver
