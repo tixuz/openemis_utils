@@ -1,19 +1,21 @@
-from datetime import datetime,timezone
-from pprint import pprint
 import json
-from dateutil.relativedelta import relativedelta
+from datetime import datetime, timezone
+
 import jwt
+from dateutil.relativedelta import relativedelta
+
+from config import iss, api_url
+
 now = datetime.now(timezone.utc)
 now_utc = int((now - relativedelta(months=+6)).timestamp())
 later_utc = int((now + relativedelta(months=+6)).timestamp())
-iss = "1661320620-ce85d68ee926852c.app"
-api_url = "https://demo.openemis.org/core/oauth/token"
+
 load = {
-  "iss": iss,
-  "scope": "API",
-  "aud": api_url,
-  "exp": later_utc,
-  "iat": now_utc
+    "iss":iss,
+    "scope":"API",
+    "aud":api_url,
+    "exp":later_utc,
+    "iat":now_utc
 }
 payload_string = json.dumps(load, indent=4)
 payload = json.loads(payload_string)
