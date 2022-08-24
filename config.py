@@ -8,6 +8,8 @@ second_shift = "Second Shift"
 path_to_chrome_driver = ".//chromedriver"
 
 #API
-iss = "1661320620-ce85d68ee926852c.app"
-api_url = "https://demo.openemis.org/core/oauth/token"
+iss = "1661365366-d6277c12d6e9f67a.app"
+auth_url = "https://demo.openemis.org/core/oauth/token"
+api_url = "https://demo.openemis.org/core/restful/v2/"
+
 

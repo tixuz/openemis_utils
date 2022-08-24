@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 import jwt
 from dateutil.relativedelta import relativedelta
 
-from config import iss, api_url
+from config import iss, auth_url
 
 now = datetime.now(timezone.utc)
 now_utc = int((now - relativedelta(months=+6)).timestamp())
@@ -13,7 +13,7 @@ later_utc = int((now + relativedelta(months=+6)).timestamp())
 load = {
     "iss":iss,
     "scope":"API",
-    "aud":api_url,
+    "aud":auth_url,
     "exp":later_utc,
     "iat":now_utc
 }
