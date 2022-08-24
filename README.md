@@ -16,4 +16,5 @@ cat jwtRS256.key.pub
 ```
 5. Create new Credentials in OpenEMIS Core, copy all from jwtRS256.key.pub to Public Key field
 6. Copy Client Id to config.py client_id
-7. run get_bearer_token.py
+7. run get_core_assertion.py
+8. you can try if the assertion works, using postman
