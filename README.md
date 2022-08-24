@@ -3,7 +3,7 @@
 
 Run
 ```
-pip -r requerements.txt
+pip install -r requirements.txt
 ```
 
 ## How To Run Selenium
