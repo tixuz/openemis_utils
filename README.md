@@ -1,4 +1,11 @@
 # Openemis Selenium
+## How To Install Requered Libraries
+
+Run
+```
+pip -r requerements.txt
+```
+
 ## How To Run Selenium
 
 1. Please write necessary information into config.py
@@ -18,13 +25,20 @@ cat jwtRS256.key
 cat jwtRS256.key.pub
 ```
 
-5. Create new Credentials in OpenEMIS Core, copy all from jwtRS256.key.pub to Public Key field
+5.
+    a) Create new Credentials in OpenEMIS Core;
+    b) copy all from jwtRS256.key.pub to Public Key field
+    c) Copy Client Id from Credentials and paste it to config.py iss variable value
 
-6. Copy Client Id to config.py client_id
+### Example
+
+```
+iss = "1661365366-d6277c12d6e9f67a.app"
+```
 
 7. run get_core_assertion.py
 
-8. you can try if the assertion works, using postman
+8. you can try if the assertion works, using postman or running get_institutions_via_api.py
 
 ## Examples of API requests to OpenEMIS Core
 ```
