@@ -11,3 +11,5 @@ __pycache__/*
 .idea/vcs.xml
 /.ssh/
 .ssh/*
+jwtRS256.key.pub
+jwtRS256.key
