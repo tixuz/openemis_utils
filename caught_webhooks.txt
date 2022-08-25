@@ -1,0 +1,47 @@
+ImmutableMultiDict([])
+CombinedMultiDict([ImmutableMultiDict([]), ImmutableMultiDict([])])
+{}
+{}
+{}
+{}
+{}
+{}
+{'area_code': 'END001',
+ 'area_id': 2,
+ 'area_level_id': 2,
+ 'area_name': 'NorthE',
+ 'area_parent_id': 1}
+{}
+{}
+{'institution_address': '270 Duke Lane',
+ 'institution_alternative_name': 'ivory',
+ 'institution_area_administrative': 'District 8',
+ 'institution_area_administrative_id': 23,
+ 'institution_area_education': 'District 8',
+ 'institution_area_education_id': 11,
+ 'institution_classification': 'Academic Institution',
+ 'institution_code': 'P1002',
+ 'institution_contact_person': None,
+ 'institution_date_opene': '01-12-2014',
+ 'institution_email': 'contact@avoryprimary.com',
+ 'institution_gender': 'Mixed',
+ 'institution_id': 6,
+ 'institution_latitude': '-15.378664747523954',
+ 'institution_locality': 'Urban',
+ 'institution_longitude': '76.76315917262934',
+ 'institution_mobile': '83948723',
+ 'institution_name': 'Avory Primary School',
+ 'institution_postal_code': '',
+ 'institution_sector': 'Public',
+ 'institution_telephone': '83948723',
+ 'institution_type': 'Public',
+ 'institution_website': 'avoryprimary.com'}
+{}
+{}
+{}
+{}
+{}
+{}
+{'institution_id': 6, 'institution_staff_id': 574}
+{}
+{}
