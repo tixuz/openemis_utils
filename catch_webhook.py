@@ -22,31 +22,9 @@ def catcher():
             pretty_json = pformat(request_json)
             b.write(pretty_json + '\n')
             b.close()
-            # return pretty_json
+            return pretty_json
         except Exception as e:
             e_message = "Catcher Exception 2: {0}: {1}".format("Error", str(e))
-            print(e_message)
-            # return e_message
-        try:
-            request_form = request.form.to_dict()
-            pprint(request_form)
-            b = open("caught_webhooks.txt", "a")
-            pretty_form = pformat(request_form)
-            b.write(pretty_form + '\n')
-            b.close()
-        except Exception as e:
-            e_message = "Catcher Exception 3: {0}: {1}".format("Error", str(e))
-            print(e_message)
-        try:
-            request_form = request.values.to_dict()
-            pprint(request_form)
-            b = open("caught_webhooks.txt", "a")
-            pretty_form = pformat(request_form)
-            b.write(pretty_form + '\n')
-            b.close()
-            return request_form
-        except Exception as e:
-            e_message = "Catcher Exception 3: {0}: {1}".format("Error", str(e))
             print(e_message)
             return e_message
 
