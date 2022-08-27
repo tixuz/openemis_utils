@@ -1,7 +1,8 @@
 from pprint import pprint
 
-from api_example.example_core_api_utils import get_assertion, get_bearer, get_institution_type_id, get_institution_codes
+from api_example.example_core_api_utils import get_institution_type_id, get_institution_codes
 from api_example.fun_get_core_assertion import get_core_assertion
+from api_example.fun_get_core_bearer import get_core_bearer
 
 bearer = ""
 type_id = 0
@@ -9,7 +10,7 @@ type_id = 0
 assertion = get_core_assertion()
 # print(assertion)
 if assertion != "":
-    bearer = get_bearer(assertion)
+    bearer = get_core_bearer(assertion)
 if bearer != "":
     type_name = 'Upper Secondary'
     type_id = get_institution_type_id(bearer=bearer, type_name=type_name)
