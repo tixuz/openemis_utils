@@ -55,3 +55,5 @@ def get_institution_codes(bearer, type_id):
     except Exception as e:
         pprint(e)
         return []
+
+get_assertion()

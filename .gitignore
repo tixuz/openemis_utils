@@ -13,3 +13,5 @@ __pycache__/*
 .ssh/*
 jwtRS256.key.pub
 jwtRS256.key
+ngrok
+chromedriver
