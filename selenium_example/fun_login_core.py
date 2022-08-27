@@ -1,5 +1,6 @@
 from selenium.common import WebDriverException, TimeoutException
 
+
 def login_core(usr, pwd, core_url, driver):
     try:
         driver.get(core_url)

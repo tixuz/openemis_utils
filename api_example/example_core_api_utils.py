@@ -1,36 +1,13 @@
+# You can create your own api requests to get data using example functions below
+
 from pprint import pprint
 
 import requests
 
-from config import auth_url, api_url
+from config.config import api_url
 
 
-def get_assertion():
-    try:
-        assertion_file = open("core_assertion.txt", 'r')
-        assertion = assertion_file.read()
-        assertion_file.close()
-        return assertion
-    except Exception as e:
-        pprint(e)
-        return ""
-
-
-def get_bearer(assertion):
-    try:
-        # pprint(req.content)
-        # pprint(req.json())
-        auth_hed = {'Content-Type':'application/x-www-form-urlencoded'}
-        auth_payloads = {'grant_type':'urn:ietf:params:oauth:grant-type:jwt-bearer', 'assertion':assertion}
-        req = requests.post(auth_url, data=auth_payloads, headers=auth_hed)
-        bearer = req.json()["access_token"]
-        return bearer
-    except Exception as e:
-        pprint(e)
-        return ""
-
-
-def get_type_id(bearer, type_name):
+def get_institution_type_id(bearer, type_name):
     try:
         hed = {'Authorization':'Bearer ' + bearer}
         url = api_url + "Institution.Types"
@@ -55,5 +32,3 @@ def get_institution_codes(bearer, type_id):
     except Exception as e:
         pprint(e)
         return []
-
-get_assertion()

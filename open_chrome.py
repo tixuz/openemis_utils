@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.common import TimeoutException, WebDriverException
-from config import path_to_chrome_driver
+from config.config import path_to_chrome_driver
 
 
 def open_chrome(port, core_url):
