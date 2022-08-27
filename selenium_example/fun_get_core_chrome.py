@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.common import TimeoutException, WebDriverException
 
 from config.config import port, core_url, path_to_chrome_driver
-from open_chrome import open_chrome
+from selenium_example.fun_open_chrome import open_chrome
 
 opt = webdriver.ChromeOptions();
 opt.add_experimental_option("debuggerAddress", "localhost:{}".format(str(port)))
