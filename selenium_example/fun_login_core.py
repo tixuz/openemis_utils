@@ -17,4 +17,5 @@ def login_core(usr, pwd, core_url, driver):
         return 0
     except WebDriverException as e:
         print("Selenium Exception 3: {0} Message: {1}".format("my message", str(e)))
-        return 0
+        return 1
+

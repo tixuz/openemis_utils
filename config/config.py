@@ -1,24 +1,31 @@
 path_to_chrome_driver = "../chromedriver"
 
-#OpenEMIS Core
+# OpenEMIS Core
 usr = "admin"
 pwd = "demo"
-core_url = "https://demo.openemis.org/core"
+core_url = "http://localhost:8082/core"
 port = 9292
 
-institution_code1 = "S2009"
-institution_code2 = "S2009"
-institution_codes = [institution_code1,
-                     institution_code2]
-first_shift = "First Shift"
-second_shift = "Second Shift"
-shifts = [first_shift,
-          second_shift]
+institution_codes = ["S2009",
+                     "S2009"]
+shifts = ["First Shift",
+          "Second Shift"]
+identity_types = [{"name":"National ID",
+                   "default":"Yes"},
+                  {"name":"Passport"}]
+nationalities = [
+    {"name":"Citizen",
+     "identity":"National ID",
+     "default":"Yes"},
+    {"name":"Non-Citizen",
+     "identity":"Passport"},
+]
+staff_position_grades = [
+    {"name":"Position Grade 1",
+     "default":"Yes"}]
 
 
-#API
+# API
 iss = "1661484483-19e52a2fc99b634e.app"
 auth_url = "https://demo.openemis.org/core/oauth/token"
 api_url = "https://demo.openemis.org/core/restful/"
-
-
