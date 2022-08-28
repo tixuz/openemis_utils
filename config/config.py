@@ -23,7 +23,33 @@ nationalities = [
 staff_position_grades = [
     {"name":"Position Grade 1",
      "default":"Yes"}]
-
+# Administrator
+# Group Administrator
+# Principal
+# Deputy Principal
+# Teacher
+# Staff
+# Guardian
+# Student
+positions = [
+    {"name":"Administrator",
+     "security":"Administrator"},
+    {"name":"Group Administrator",
+     "security":"Group Administrator"},
+    {"name":"Principal",
+     "security":"Principal",
+     "teaching":"Yes"},
+    {"name":"Deputy Principal",
+     "security":"Deputy Principal",
+     "teaching":"Yes"},
+    {"name":"Teacher",
+     "security":"Teacher",
+     "default":"Yes",
+     "teaching":"Yes"},
+    {"name":"Staff",
+     "security":"Staff",
+     "default":"Yes"},
+]
 
 # API
 iss = "1661484483-19e52a2fc99b634e.app"
