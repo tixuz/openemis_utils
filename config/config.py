@@ -3,16 +3,20 @@ path_to_chrome_driver = "../chromedriver"
 # OpenEMIS Core
 usr = "admin"
 pwd = "demo"
-core_url = "http://localhost:8082/core"
+# core_url = "http://localhost:8082/core"
+core_url = "https://demo.openemis.org/core"
 port = 9292
 
 institution_codes = ["S2009",
-                     "S2009"]
-shifts = ["First Shift",
-          "Second Shift"]
-identity_types = [{"name":"National ID",
-                   "default":"Yes"},
-                  {"name":"Passport"}]
+                     "S2005"]
+shifts = [
+    {"name":"First Shift"},
+    {"name":"Second Shift"},
+]
+identity_types = [
+    {"name":"National ID",
+     "default":"Yes"},
+    {"name":"Passport"}]
 nationalities = [
     {"name":"Citizen",
      "identity":"National ID",

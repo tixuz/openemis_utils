@@ -12,5 +12,5 @@ if driver is not None:
         for institution_code in institution_codes:
             institution_encoded_link = get_institution_encoded_link(core_url, institution_code, driver)
             if institution_encoded_link != "":
-                for shift_name in shifts:
-                    add_shift_to_institution(core_url, institution_encoded_link, shift_name, driver)
+                for shift in shifts:
+                    add_shift_to_institution(core_url, institution_encoded_link, shift, driver)
