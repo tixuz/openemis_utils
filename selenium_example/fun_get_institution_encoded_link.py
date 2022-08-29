@@ -6,7 +6,7 @@ from selenium_example.fun_reset_send import reset_send
 from selenium_example.fun_text_send import text_send
 
 
-def get_institution_encoded_link(core_url, institution_code, driver):
+def get_institution_encoded_link(institution_code, core_url, driver):
     institution_encoded_link = ""
     goto_url = "{}/Institutions/Institutions/index"
     go_to(goto_url, core_url, driver)
