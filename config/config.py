@@ -3,20 +3,24 @@ path_to_chrome_driver = "../chromedriver"
 # OpenEMIS Core
 usr = "admin"
 pwd = "demo"
-# core_url = "http://localhost:8082/core"
-core_url = "https://demo.openemis.org/core"
+core_url = "http://localhost:8082/core"
+# core_url = "https://demo.openemis.org/core"
 port = 9292
 
-institution_codes = ["S2009",
-                     "S2005"]
+institution_codes = ["S2005",
+                     "S1006",
+                     "S2007"]
+
 shifts = [
-    {"name":"First Shift"},
-    {"name":"Second Shift"},
+    {"name":"Morning Shift"},
+    {"name":"All Day Long Shift"},
 ]
+
 identity_types = [
     {"name":"National ID",
      "default":"Yes"},
     {"name":"Passport"}]
+
 nationalities = [
     {"name":"Citizen",
      "identity":"National ID",
@@ -24,17 +28,11 @@ nationalities = [
     {"name":"Non-Citizen",
      "identity":"Passport"},
 ]
+
 staff_position_grades = [
-    {"name":"Position Grade 1",
+    {"name":"Pay Scale 1",
      "default":"Yes"}]
-# Administrator
-# Group Administrator
-# Principal
-# Deputy Principal
-# Teacher
-# Staff
-# Guardian
-# Student
+
 positions = [
     {"name":"Administrator",
      "security":"Administrator"},
@@ -54,6 +52,11 @@ positions = [
      "security":"Staff",
      "default":"Yes"},
 ]
+
+area_levels = [
+    {"name":"Zone"}
+]
+
 
 # API
 iss = "1661484483-19e52a2fc99b634e.app"

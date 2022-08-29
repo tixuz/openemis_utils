@@ -16,12 +16,12 @@ def add_field_staff_position(core_url, position, driver):
         text_send(text_path, text_text, driver)
         try:
             if position["teaching"]:
-                select_path = '//*[@id="staffpositiontitles-identity_type"]'
+                select_path = '//*[@id="staffpositiontitles-type"]'
                 select_text = "Teaching"
                 select_send(select_path, select_text, driver)
 
         except Exception as e:
-            select_path = '//*[@id="staffpositiontitles-identity_type"]'
+            select_path = '//*[@id="staffpositiontitles-type"]'
             select_text = "Non-Teaching"
             select_send(select_path, select_text, driver)
 

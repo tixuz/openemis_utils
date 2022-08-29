@@ -20,7 +20,7 @@ def get_institution_encoded_link(institution_code, core_url, driver):
 
     text_path = '//*[@id="advancesearch-institutions-code"]'
     text_text = institution_code
-    print(institution_code)
+    # print(institution_code)
     text_send(text_path, text_text, driver)
     button_path = '//button[@data-original-title="Search"]'
     button_click(button_path, driver)
